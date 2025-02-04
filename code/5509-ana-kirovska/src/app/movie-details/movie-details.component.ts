@@ -1,19 +1,18 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MovieService } from '../services/movie.service';
-import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-movie-details',
   imports: [CommonModule],
   templateUrl: './movie-details.component.html',
-  styleUrl: './movie-details.component.css'
+  styleUrls: ['./movie-details.component.css']
 })
-
 export class MovieDetailsComponent implements OnInit {
   movie: any;
+  movieToDeleteId: number | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -32,9 +31,13 @@ export class MovieDetailsComponent implements OnInit {
     this.router.navigate(['/movies', id, 'edit']);
   }
   
-  deleteMovie(id: number): void {
-    if (confirm('Are you sure you want to delete this movie?')) {
-      this.movieService.deleteMovie(id).subscribe(() => {
+  openDeleteModal(id: number): void {
+    this.movieToDeleteId = id;
+  }
+
+  deleteMovie(): void {
+    if (this.movieToDeleteId !== null) {
+      this.movieService.deleteMovie(this.movieToDeleteId).subscribe(() => {
         this.router.navigate(['/movies']);
       });
     }

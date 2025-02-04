@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../services/movie.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -8,12 +7,11 @@ import { CommonModule } from '@angular/common';
   selector: 'app-movie-list',
   imports: [CommonModule],
   templateUrl: './movie-list.component.html',
-  styleUrl: './movie-list.component.css'
+  styleUrls: ['./movie-list.component.css']
 })
-
 export class MovieListComponent implements OnInit {
-[x: string]: any;
   movies: any[] = [];
+  movieToDeleteId: number | null = null;
 
   constructor(private movieService: MovieService, private router: Router) {}
 
@@ -31,11 +29,16 @@ export class MovieListComponent implements OnInit {
   editMovie(id: number): void {
     this.router.navigate(['/movies', id, 'edit']);
   }
-  
-  deleteMovie(id: number): void {
-    if (confirm('Are you sure you want to delete this movie?')) {
-      this.movieService.deleteMovie(id).subscribe(() => {
-        this.movies = this.movies.filter((movie) => movie.id !== id);
+
+  setMovieIdToDelete(movieId: number): void {
+    this.movieToDeleteId = movieId;
+  }
+
+  deleteMovie(): void {
+    if (this.movieToDeleteId !== null) {
+      this.movieService.deleteMovie(this.movieToDeleteId).subscribe(() => {
+        this.movies = this.movies.filter((movie) => movie.id !== this.movieToDeleteId);
+        this.movieToDeleteId = null;  // Reset movie ID after deletion
       });
     }
   }

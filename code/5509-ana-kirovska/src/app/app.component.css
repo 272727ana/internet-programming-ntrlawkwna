@@ -94,3 +94,30 @@
     }
   }
   
+  .navbar {
+    background-color: #343a40; /* Dark background for the navbar */
+  }
+  
+  .navbar-container {
+    max-width: 1200px; /* Optional: Set a maximum width for the navbar */
+  }
+  
+  .navbar-brand h1 {
+    color: white; /* White color for the brand */
+    margin-bottom: 0; /* Remove the bottom margin */
+  }
+  
+  .nav-link {
+    color: white; /* White color for the links */
+    margin-left: 20px; /* Add space between links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Hover effect color */
+  }
+  
+  .nav-item {
+    list-style: none; /* Remove the bullet point for each list item */
+  }
+  

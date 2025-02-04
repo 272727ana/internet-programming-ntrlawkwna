@@ -47,43 +47,6 @@
       "rating": 9.3
     },
     {
-      "id": "54",
-      "title": "Schindler's List",
-      "year": 1993,
-      "director": "Steven Spielberg",
-      "genre": [
-        "Biography",
-        "Drama",
-        "History"
-      ],
-      "plot": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-      "cast": [
-        {
-          "actor": "Liam Neeson",
-          "character": "Oskar Schindler"
-        },
-        {
-          "actor": "Ralph Fiennes",
-          "character": "Amon Goeth"
-        },
-        {
-          "actor": "Ben Kingsley",
-          "character": "Itzhak Stern"
-        },
-        {
-          "actor": "Embeth Davidtz",
-          "character": "Helen Hirsch"
-        }
-      ],
-      "oscars": {
-        "bestPicture": "Schindler's List",
-        "bestDirector": "Steven Spielberg",
-        "bestActor": "Liam Neeson",
-        "bestAdaptedScreenplay": "Steven Zaillian"
-      },
-      "rating": 8.9
-    },
-    {
       "id": "39",
       "title": "Pulp Fiction",
       "year": 1994,
@@ -168,65 +131,6 @@
       "rating": 9
     },
     {
-      "id": "9",
-      "title": "Fargo",
-      "year": 1996,
-      "director": "Joel Coen",
-      "genre": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "plot": "Jerry Lundegaard's inept crime falls apart due to his and his henchmen's bungling and the persistent police work of the quite pregnant Marge Gunderson.",
-      "cast": [
-        {
-          "actor": "Frances McDormand",
-          "character": "Marge Gunderson"
-        },
-        {
-          "actor": "William H. Macy",
-          "character": "Jerry Lundegaard"
-        },
-        {
-          "actor": "Steve Buscemi",
-          "character": "Carl Showalter"
-        },
-        {
-          "actor": "Peter Stormare",
-          "character": "Gaear Grimsrud"
-        },
-        {
-          "actor": "Harve Presnell",
-          "character": "Wade Gustafson"
-        },
-        {
-          "actor": "Kristin Rudrüd",
-          "character": "Jean Lundegaard"
-        },
-        {
-          "actor": "Tony Denman",
-          "character": "Scotty Lundegaard"
-        },
-        {
-          "actor": "Gary Houston",
-          "character": "Irate Customer"
-        },
-        {
-          "actor": "Sally Wingert",
-          "character": "Cashier"
-        },
-        {
-          "actor": "Kurt Schweickhardt",
-          "character": "Car Salesman"
-        }
-      ],
-      "oscars": {
-        "bestActress": "Frances McDormand",
-        "bestOriginalScreenplay": "Joel Coen, Ethan Coen"
-      },
-      "rating": 8.1
-    },
-    {
       "id": "43",
       "title": "Taxi Driver",
       "year": 1976,
@@ -289,115 +193,6 @@
       "rating": 8.8
     },
     {
-      "id": "7",
-      "title": "Reservoir Dogs",
-      "year": 1992,
-      "director": "Quentin Tarantino",
-      "genre": [
-        "Crime",
-        "Drama",
-        "Thriller"
-      ],
-      "plot": "After a simple jewelry heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
-      "cast": [
-        {
-          "actor": "Harvey Keitel",
-          "character": "Mr. White"
-        },
-        {
-          "actor": "Tim Roth",
-          "character": "Mr. Orange"
-        },
-        {
-          "actor": "Michael Madsen",
-          "character": "Mr. Blonde"
-        },
-        {
-          "actor": "Chris Penn",
-          "character": "Nice Guy Eddie"
-        },
-        {
-          "actor": "Steve Buscemi",
-          "character": "Mr. Pink"
-        },
-        {
-          "actor": "Lawrence Tierney",
-          "character": "Joe Cabot"
-        },
-        {
-          "actor": "Edward Bunker",
-          "character": "Mr. Blue"
-        },
-        {
-          "actor": "Quentin Tarantino",
-          "character": "Mr. Brown"
-        },
-        {
-          "actor": "Randy Brooks",
-          "character": "Holdaway"
-        },
-        {
-          "actor": "Kirk Baltz",
-          "character": "Marvin Nash"
-        }
-      ],
-      "oscars": {
-        "bestSupportingActor": "Chris Penn"
-      },
-      "rating": 8.3
-    },
-    {
-      "id": "52",
-      "title": "The Usual Suspects",
-      "year": 1995,
-      "director": "Bryan Singer",
-      "genre": [
-        "Crime",
-        "Mystery",
-        "Thriller"
-      ],
-      "plot": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, beginning with the five criminals who met in a police lineup.",
-      "cast": [
-        {
-          "actor": "Kevin Spacey",
-          "character": "Verbal Kint"
-        },
-        {
-          "actor": "Gabriel Byrne",
-          "character": "Dean Keaton"
-        },
-        {
-          "actor": "Chazz Palminteri",
-          "character": "Dave Kujan"
-        },
-        {
-          "actor": "Stephen Baldwin",
-          "character": "Michael McManus"
-        },
-        {
-          "actor": "Pete Postlethwaite",
-          "character": "Kobayashi"
-        },
-        {
-          "actor": "Benicio Del Toro",
-          "character": "Fred Fenster"
-        },
-        {
-          "actor": "Kevin Pollak",
-          "character": "Todd Hockney"
-        },
-        {
-          "actor": "Giancarlo Esposito",
-          "character": "Jack Baer"
-        }
-      ],
-      "oscars": {
-        "bestSupportingActor": "Kevin Spacey",
-        "bestOriginalScreenplay": "Christopher McQuarrie"
-      },
-      "rating": 8.5
-    },
-    {
       "id": "27",
       "title": "A Clockwork Orange",
       "year": 1971,
@@ -442,40 +237,6 @@
         "bestDirector": "Stanley Kubrick"
       },
       "rating": 8.3
-    },
-    {
-      "id": "21",
-      "title": "Seven",
-      "year": 1995,
-      "director": "David Fincher",
-      "genre": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "plot": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
-      "cast": [
-        {
-          "actor": "Morgan Freeman",
-          "character": "Somerset"
-        },
-        {
-          "actor": "Brad Pitt",
-          "character": "Mills"
-        },
-        {
-          "actor": "Kevin Spacey",
-          "character": "John Doe"
-        },
-        {
-          "actor": "Gwyneth Paltrow",
-          "character": "Tracy"
-        }
-      ],
-      "oscars": {
-        "bestFilmEditing": "Richard Francis-Bruce"
-      },
-      "rating": 8.6
     },
     {
       "id": "30",

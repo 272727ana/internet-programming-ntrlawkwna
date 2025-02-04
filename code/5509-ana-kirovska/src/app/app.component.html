@@ -1,18 +1,18 @@
 <!-- The navigation should be moved to a header component -->
 <nav class="navbar">
-  <div class="container navbar-container">
+  <div class="container navbar-container d-flex justify-content-between align-items-center p-3">
     <a routerLink="/" class="navbar-brand">
       <h1>Movie Management</h1>
     </a>
-    <ul class="navbar-nav">
-      @for (route of routes; track $index) {
-        <li class="nav-item">
-          <a  [routerLink]="route.url" routerLinkActive="active" class="nav-link">{{route.linkName}}</a>
-        </li>
-      }
+    <ul class="navbar-nav d-flex m-0">
+      <li *ngFor="let route of routes; let i = index" class="nav-item">
+        <a [routerLink]="route.url" routerLinkActive="active" class="nav-link">{{ route.linkName }}</a>
+      </li>
     </ul>
+    
   </div>
 </nav>
+
 
 <!-- Main Content -->
 <main class="main-content">

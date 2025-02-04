@@ -15,7 +15,7 @@
         <button class="btn btn-warning me-2" (click)="editMovie(movie.id)">
           <i class="bi bi-pencil"></i> Edit
         </button>
-        <button class="btn btn-danger" (click)="deleteMovie(movie.id)">
+        <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#deleteModal" (click)="openDeleteModal(movie.id)">
           <i class="bi bi-trash"></i> Delete
         </button>
       </div>
@@ -37,6 +37,25 @@
           <li><strong>Best Actor:</strong> {{ movie.oscars.bestActor }}</li>
           <li><strong>Best Adapted Screenplay:</strong> {{ movie.oscars.bestAdaptedScreenplay }}</li>
         </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Delete Confirmation Modal -->
+  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="deleteModalLabel">Delete Movie</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to delete the movie "{{ movie?.title }}"?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="deleteMovie()">Delete</button>
+        </div>
       </div>
     </div>
   </div>
