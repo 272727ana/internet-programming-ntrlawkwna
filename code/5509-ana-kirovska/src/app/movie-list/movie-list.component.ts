@@ -47,8 +47,8 @@ export class MovieListComponent implements OnInit {
   }
 
   createMovie(): void {
-    this.router.navigate(['/movies', 'create']);
-  }
+    this.router.navigate(['/movies', 'create', 'add']);
+  }  
 
   // Sort movies by a given field
   sortMovies(field: string): void {
