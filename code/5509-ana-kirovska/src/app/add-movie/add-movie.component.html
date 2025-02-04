@@ -1,0 +1,44 @@
+<div class="card p-4">
+    <div class="card-body">
+      <h2 class="card-title text-primary">Create New Movie</h2>
+      
+      <form [formGroup]="movieForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input id="title" formControlName="title" class="form-control" type="text" />
+        </div>
+  
+        <div class="mb-3">
+          <label for="year" class="form-label">Year</label>
+          <input id="year" formControlName="year" class="form-control" type="number" />
+        </div>
+  
+        <div class="mb-3">
+          <label for="director" class="form-label">Director</label>
+          <input id="director" formControlName="director" class="form-control" type="text" />
+        </div>
+  
+        <div class="mb-3">
+          <label for="plot" class="form-label">Plot</label>
+          <textarea id="plot" formControlName="plot" class="form-control"></textarea>
+        </div>
+  
+        <div class="mb-3">
+          <label for="genre" class="form-label">Genres</label>
+          <select id="genre" formControlName="genre" class="form-control" multiple>
+            <option *ngFor="let genre of ['Crime', 'Drama', 'Action', 'Comedy', 'Romance']" [value]="genre">
+              {{ genre }}
+            </option>
+          </select>
+        </div>
+  
+        <div class="mb-3">
+          <label for="rating" class="form-label">Rating</label>
+          <input id="rating" formControlName="rating" class="form-control" type="number" min="0" max="10" />
+        </div>
+  
+        <button type="submit" class="btn btn-success" [disabled]="!movieForm.valid">Create Movie</button>
+      </form>
+    </div>
+  </div>
+  

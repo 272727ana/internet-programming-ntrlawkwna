@@ -7,13 +7,14 @@ import { ActorDetailsComponent } from './actor-details/actor-details.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { AboutComponent } from './about/about.component';
 import { CastCreateComponent } from './cast-create/cast-create.component';
+import { AddMovieComponent } from './add-movie/add-movie.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/movies', pathMatch: 'full' },
     { path: 'movies', component: MovieListComponent },
     { path: 'movies/:id', component: MovieDetailsComponent },
     { path: 'movies/:id/edit', component: MovieEditComponent },
-    { path: 'movies/create', component: MovieCreateComponent },
+    { path: 'movies/create/add', component: AddMovieComponent },
     { path: 'actor/:id', component: ActorDetailsComponent },
     { path: 'statistics', component: StatisticsComponent },
     { path: 'about', component: AboutComponent },
