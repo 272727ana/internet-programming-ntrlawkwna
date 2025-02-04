@@ -36,6 +36,7 @@ export class AddMovieComponent implements OnInit {
       this.movieService.createMovie(this.movieForm.value).subscribe(
         (data) => {
           console.log('Movie created successfully:', data);
+          window.history.back()
         },
         (error) => {
           console.error('Error creating movie:', error);
