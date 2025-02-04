@@ -1,0 +1,47 @@
+
+<div class="d-flex justify-content-between">
+  <h1>Movie List</h1>
+  <button class="btn btn-primary" (click)="createMovie()">Create Movie</button>
+</div>
+<!--filters-->
+<!-- <div class="d-flex justify-content-between my-3">
+  <div class="form-group">
+    <label for="search">Search</label>
+    <input type="text" class="form-control" id="search" [(ngModel)]="searchTerm">
+  </div>
+  <div class="form-group">
+    <label for="genre">Genre</label>
+    <select class="form-control" id="genre" [(ngModel)]="selectedGenre">
+      <option value="">All</option>
+      <option *ngFor="let genre of genres" [value]="genre">{{ genre }}</option>
+    </select>
+  </div>
+</div> -->
+<table class="table">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Year</th>
+        <th scope="col">Director</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Oscars</th>
+        <th scope="col">Rating</th>
+        <th scope="col">Actions</th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+        <td>{{ movie.id }}</td>
+        <td>{{ movie.title }}</td>
+        <td>{{ movie.year }}</td>
+        <td>{{ movie.director }}</td>
+        <td>{{ movie.genre.join(' / ') }}</td>
+        <td>{{ movie.oscars }}</td>
+        <td>{{ movie.rating }}</td>
+        <td>
+            <button class="btn btn-secondary" (click)="viewMovie(movie.id)">View</button>
+            <button class="btn btn-secondary mx-2" (click)="editMovie(movie.id)">Edit</button>
+            <button class="btn btn-secondary" (click)="deleteMovie(movie.id)">Delete</button>
+        </td>
+        </tr>
+    </tbody>
+  </table>

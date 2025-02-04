@@ -1,0 +1,23 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h3>About the Student</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">{{ student.name }}</h4>
+            <br class="card-text">
+              <strong>Major:</strong> {{ student.major }}<br />
+              <strong>University:</strong> {{ student.university }}<br />
+              <strong>Year of Study:</strong> {{ student.yearOfStudy }}<br />
+              <strong>Git profile:</strong> {{ student.gitProfile }}
+          </div>
+          <div class="card-footer text-muted">
+            <p>Current Year: {{ currentYear }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

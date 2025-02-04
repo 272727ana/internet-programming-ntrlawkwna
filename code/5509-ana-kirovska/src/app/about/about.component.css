@@ -1,0 +1,30 @@
+/* about.component.css */
+.card {
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-footer {
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+  }
+  
+  .card-body {
+    background-color: #f8f9fa;
+  }
+  
+  .card-footer {
+    background-color: #e9ecef;
+  }
+  
